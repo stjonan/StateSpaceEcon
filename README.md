@@ -8,6 +8,9 @@ Website for a short course
 - From SEM to Dynamic Latent Variable Models
 - Nonlinear State Space Models
 
+## Exercises
+- exercise.md
+
 ## Instructor
 
 Jonas Andersson
