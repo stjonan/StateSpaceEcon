@@ -9,7 +9,7 @@ Website for a short course
 - Nonlinear State Space Models
 
 ## Exercises
-- [exercise.md
+- [exercise.md]
 
 ## Instructor
 
