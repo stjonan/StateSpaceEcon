@@ -4,25 +4,25 @@
 
 A panel of firms produces output according to
 
-\[
+$$
 y_{it} = \alpha + \beta k_{it} + a_i + \varepsilon_{it},
-\]
+$$
 
 where:
 
-- \(y_{it}\) is log output,
-- \(k_{it}\) is log capital,
-- \(a_i\) is time-invariant unobserved firm productivity,
-- \(\varepsilon_{it}\) is an idiosyncratic shock.
+- $y_{it}$ is log output,
+- $k_{it}$ is log capital,
+- $a_i$ is time-invariant unobserved firm productivity,
+- $\varepsilon_{it}$ is an idiosyncratic shock.
 
 Assume
 
-\[
+$$
 a_i \sim N(0, \sigma_a^2), \qquad
 \varepsilon_{it} \sim N(0, \sigma_\varepsilon^2).
-\]
+$$
 
-TMB treats the firm effects \(a_i\) as random effects and integrates them out using the Laplace approximation.
+TMB treats the firm effects $a_i$ as random effects and integrates them out using the Laplace approximation.
 
 ## Learning goals
 
@@ -58,9 +58,9 @@ A working C++ compiler is also required. On Windows, install the version of Rtoo
 
 Open `production_starter.cpp` and replace each TODO. The joint negative log-likelihood is
 
-\[
+$$
 -\sum_i \log f(a_i) - \sum_{i,t}\log f(y_{it}\mid a_i).
-\]
+$$
 
 Hints:
 
@@ -78,17 +78,17 @@ source("simulate_data.R")
 source("run_exercise.R")
 ```
 
-Record estimates of \(\alpha\), \(\beta\), \(\sigma_a\), and \(\sigma_\varepsilon\).
+Record estimates of $\alpha$, $\beta$, $\sigma_a$, and $\sigma_\varepsilon$.
 
 ### Task 3: Economic interpretation
 
 Answer:
 
-1. In a log–log specification, how do you interpret \(\beta\)?
-2. What does a large \(\sigma_a\) imply about firms?
-3. Why would pooled OLS understate uncertainty when repeated observations from the same firm share \(a_i\)?
-4. Compare the TMB estimate of \(\beta\) with pooled OLS.
-5. What identifying assumption is needed for a random-effects interpretation of \(\beta\)?
+1. In a log–log specification, how do you interpret $\beta$?
+2. What does a large $\sigma_a$ imply about firms?
+3. Why would pooled OLS understate uncertainty when repeated observations from the same firm share $a_i$?
+4. Compare the TMB estimate of $\beta$ with pooled OLS.
+5. What identifying assumption is needed for a random-effects interpretation of $\beta$?
 
 ### Optional extension
 
@@ -96,4 +96,4 @@ Modify the data-generating process so that productivity is correlated with capit
 
 ## Expected benchmark
 
-The simulation uses \(\alpha=1\), \(\beta=0.6\), \(\sigma_a=0.5\), and \(\sigma_\varepsilon=0.25\). Estimates will not equal these values exactly because the sample is random.
+The simulation uses $\alpha=1$, $\beta=0.6$, $\sigma_a=0.5$, and $\sigma_\varepsilon=0.25$. Estimates will not equal these values exactly because the sample is random.
