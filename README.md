@@ -10,7 +10,7 @@ Website for a short course
 
 ## Exercises
 
-- exercise.md
+- [Exercise](exercise.md)
 
 ## Instructor
 
